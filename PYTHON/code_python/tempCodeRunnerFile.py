@@ -12,7 +12,7 @@ class HotelManagementSystem:
 
         #===========1st img=============
         img1=Image.open("C:\KIM NGỌC\DO_AN_PYTHON\PYTHON\hotel images\hotel1.png")
-        img1=img1.resize((1550,140),Image.BICUBIC)
+        img1=img1.resize((1550,140),Image.ANTIALIAS)
         self.photoimg1=ImageTk.PhotoImage(img1)
 
         lblimg=Label(self.root,image=self.photoimg1,bd=4,relief=RIDGE)
